@@ -21,7 +21,7 @@ app.use('/api/notes', require('./routes/notes'));
 
 
 // START THE SERVER
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
     console.log(`The iNotebook application started successfully at http://localhost:${port}`);
 });
 // app.listen(port, () => {
