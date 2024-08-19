@@ -1,11 +1,14 @@
 const connectToDb = require('./db');
 connectToDb();
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 const express = require("express");
 var cors = require('cors') 
 
 const app = express();
-const port = process.env.REACT_APP_PORT;
+const port = process.env.SERVER_BACKENDI_PORT;
 
 app.get('/', (req, res) => {
     res.send('hello world')
